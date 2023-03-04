@@ -29,7 +29,7 @@ const MenuForm=()=>{
     {
       if(hostel!=='' && day!=='' && meal!==''){
       try {
-        const response = await axios.post('http://127.0.0.1:9000/testApi', data);
+        const response = await axios.post('https://menu-tracker-app-backend-5rh2.onrender.com/testApi', data);
         setMenuData(response.data);
       } catch (error) {
         console.error(error);
