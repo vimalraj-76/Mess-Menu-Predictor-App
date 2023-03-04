@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import MenuPage from './components/menu_page/MenuPage';
+// import Particles from "react-tsparticles";
+import GalleryPage from './components/gallery_page/GalleryPage';
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={apiResponse:""};
+  }
+  callApi()
+  {
+    fetch('http://localhost:9001/getMenu').then(res=>res.text()).then(res=>this.setState({apiResponse:res}));
+  }
+  componentWillMount(){
+    this.callApi();
+  }
+render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+  <div className='fullPage'>
+  <MenuPage />
+  <GalleryPage />
+  <p>{this.state.apiResponse}</p>
+  </div>
+  );}}
 export default App;
