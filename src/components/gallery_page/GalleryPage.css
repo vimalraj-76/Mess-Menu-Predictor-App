@@ -7,87 +7,87 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-top: 45px;
 padding-bottom: 45px;
 }
-
 .gallery h1
 {
     text-decoration: solid;
     color:#0CCDA3;
 }
-
 .images-selector
 {
     height: 350px;
 }
-
 .images-selector input
 {
     position: absolute;
     z-index: 50;
-  }
-  
-  .images-selector input:checked + .img-card {
+}
+.images-selector input:checked + .img-card
+{
     filter: none;
     transform: scaleY(1);
-  }
-
-  .img1 {
+}
+.img1
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/5/01.webp);
-  }
-  
-  .img2 {
+}
+.img2 
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/1/002.webp);
-  }
-  
-  .img3 {
+}
+.img3
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/33/05.webp);
-  }
-  
-  .img4 {
+}
+.img4
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/1/012.webp);
-  }
-  
-  .img5 {
+}
+.img5
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/31/01.webp);
-  }
-  
-  .img6 {
+}
+.img6
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/1/009.webp);
-  }
-  
-  .img7 {
+}
+.img7
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/1/007.webp);
-  }
-  
-  .img8 {
+}
+.img8
+{
     background-image: url(https://www.bitsathy.ac.in/assets/images/facilities/campus/30/01.webp);
-  }
-  .img{
+}
+.img
+{
     display: flex;
     justify-content: center;
     left : 1;
-  }
-  .row1{
+}
+.row1
+{
     padding-left: 10px;
     display: flex;
-  }
-  .row2{
+}
+.row2
+{
     padding-left: 10px;
     display: flex;
-  }
-  .gallery-main
+}
+.gallery-main
 {
   height:100px;
 }
-
-.img-card::before{
+.img-card::before
+{
     transform: scaleY(-1);
-  }
-
-  .img-card:hover {
+}
+.img-card:hover
+{
     filter: grayscale(0) opacity(1);
-  }
-
-  .img-card {
+}
+.img-card
+{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -98,23 +98,22 @@ padding-bottom: 45px;
     cursor: pointer;
     transition: all 200ms ease-in;
     filter: grayscale(1) opacity(.8);
-  }
+}
 
-  #galleryPage
-  {
+#galleryPage
+{
     padding-bottom: 120px;
-  }
+}
 
-  .footer
-  {
+.footer
+{
     color:aliceblue;
     text-align: center;
-  }
+}
 
-  .footer span
-  {
+.footer span
+{
     background: linear-gradient(to right, #52e9c2 0%, #86dedd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* background-image: linear-gradient(to right top, #c1cfd3, #86dedd, #52e9c2, #67ef83, #a8eb12);; */
-  }
+}

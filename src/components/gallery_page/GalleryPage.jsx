@@ -1,6 +1,16 @@
+// The import statement imports the React library and the CSS file for the component.
+// The GalleryPage component is defined as a function component that returns some JSX code.
+// The JSX code is enclosed in empty tags (<> and </>) to allow multiple elements to be returned.
+// The div with id="galleryPage" serves as a container for the gallery page.
+// The div with className="gallery" contains a heading for the gallery page.
+// The div with className="images-selector" contains a grid of images that can be selected.
+// Each image is represented by an input element with type="radio" and a corresponding label element. The input elements have unique id attributes and the name attribute is the same for all of them, which makes them mutually exclusive.
+// The label elements have a htmlFor attribute that matches the id of the corresponding input element. They also have a className attribute that assigns a CSS class to each image card.
+// The div with className="footer" contains a simple credit line for the developer of the gallery page.
+// The export default statement exports the GalleryPage component for use in other parts of the application.
+
 import React from "react";
 import './GalleryPage.css';
-
 const GalleryPage = () =>
 {
     return (
@@ -53,5 +63,4 @@ const GalleryPage = () =>
   </div>
     </>);
 }
-
 export default GalleryPage;

@@ -1,18 +1,22 @@
+// This program is a React component that renders a menu page with a particle animation background and a form to select hostel, day, and meal options.
+// It uses the react-tsparticles library to render the particle animation.
+// The MenuForm component is imported and rendered within the MenuPage component.
+// The form contains select dropdowns for hostel, day, and meal options.
+// The form submission triggers an onClick event on a NavLink component which calls the onFormSubmit function to make a POST request to a local API endpoint using the axios library.
+// The response data is passed to the setMenuData function through a context provided by the MyContext component.
+// The selected options and the response data are used to render the menu for the selected hostel, day, and meal options.
+
 import React from "react";
 import "./MenuPage.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-// import Particles from "react-tsparticles";
 import MenuForm from './menu_form/MenuForm'
 const MenuPage = () =>
 {
     const particlesInit = async (main) => {
-        //console.log(main);
         await loadFull(main);
       };
-    
       const particlesLoaded = (container) => {
-        //console.log(container);
       };
     return (<>
     <Particles
@@ -24,7 +28,7 @@ const MenuPage = () =>
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push"
               },
               onHover: {
@@ -38,17 +42,17 @@ const MenuPage = () =>
                 quantity: 4
               },
               repulse: {
-                distance: 200,
+                distance: 100,
                 duration: 0.4
               }
             }
           },
           particles: {
             color: {
-              value: "#ffffff"
+              value: "#abf3c8"
             },
             links: {
-              color: "#ffffff",
+              color: "#5ad9ac",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -64,24 +68,24 @@ const MenuPage = () =>
                 default: "bounce"
               },
               random: false,
-              speed: 1,
+              speed: 3,
               straight: false
             },
             number: {
               density: {
                 enable: true,
-                area: 800
+                area: 1500
               },
-              value: 80
+              value: 60
             },
             opacity: {
-              value: 0.5
+              value: 0.4
             },
             shape: {
-              type: "circle"
+              type: "star"
             },
             size: {
-              value: { min: 1, max: 5 }
+              value: { min: 1, max: 3 }
             }
           },
           detectRetina: true

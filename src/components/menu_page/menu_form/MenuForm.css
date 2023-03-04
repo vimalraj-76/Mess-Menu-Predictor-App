@@ -4,7 +4,6 @@ form.form-example
     padding-right: 25%;
     display:grid
 }
-  
 div.form-example
 {
     display:flex;
@@ -13,13 +12,11 @@ div.form-example
     margin-top: 20px;
     text-align: center;
 }
-
 .form-example
 {
     text-align: center;
     display:grid;
 }
-
 .whitetext
 {
 color: rgb(0, 0, 0);
@@ -29,21 +26,14 @@ padding-right: 10px;
 font-size: larger;
 width:max-content;
 }
-
 .block
 {
     border-style: ridge;
     border-radius: 15px;
     width: 600px;
     border-color: black;
-    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     background-image: linear-gradient(to left bottom, #c1fcd3, #abf3c8, #93ebbd, #79e2b4, #5ad9ac, #49dac0, #3fdbd2, #42dbe1, #86e2fc, #bfe8ff, #e8f1ff, #ffffff);
-    /* background-color: rgba(255,255,255,.6); */
-    /* background-image: url("./favicon (1).png"); */
-    /* background-color: #cccccc; */
-    /* background-repeat: no-repeat; */
-  }
-
+}
 .headers1
 {
     text-align: center;
@@ -53,12 +43,10 @@ width:max-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 25px;
 }
-
 .main_page
 {
 height: 1000px;
 }
-
 form.form-example
 {
     padding-left: 25%;
@@ -66,7 +54,6 @@ form.form-example
     display:grid;
     justify-content: center;
 }
-
 div.form-example
 {
     display:flex;
@@ -75,8 +62,7 @@ div.form-example
     margin-top: 20px;
     text-align: center;
 }
-
-.button {
+.Navlink{
     border-radius: 4px;
     background-color: #3b2f91;
     border: none;
@@ -85,20 +71,20 @@ div.form-example
     font-size: 15px;
     padding-top: 7px;
     padding-bottom: 7px;
-    width: 215px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 2px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
   }
-
-  .button span {
+  .Navlink span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.7s;
   }
-
-  .button span:after {
+  .Navlink span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -106,23 +92,19 @@ div.form-example
     right: -20px;
     transition: 0.5s;
   }
-
-  .button:hover span {
-    padding-right: 25px;
+  .Navlink:hover span {
+    padding-right: 15px;
   }
-  
-  .button:hover span:after {
+  .Navlink:hover span:after {
     opacity: 1;
     right: 0;
   }
-
   #hostel,#day,#meal{
     padding-left: 10px;
     text-align: center;
     font-size: medium;
     }
-  
-  .button-head
+  .Navlink-head
   {
     text-align: center;
     padding-top: 30px;
