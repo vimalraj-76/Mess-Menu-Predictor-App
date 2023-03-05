@@ -6,6 +6,7 @@ text-shadow : 1px 1px 1px #C1FCD3;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-top: 45px;
 padding-bottom: 45px;
+position: relative;
 }
 .gallery h1
 {
