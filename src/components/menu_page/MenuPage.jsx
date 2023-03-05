@@ -92,7 +92,7 @@ const MenuPage = () =>
         }}
       />
         <div className="menu_page">
-        <div className="bitLogo"><img src="images/logo-removebg-preview.png" alt="logo" width="500" height="100" />
+        <div className="bitLogo"><img src="images/logo-removebg-preview.png" alt="logo"/>
         </div>
         <MenuForm />
         </div>

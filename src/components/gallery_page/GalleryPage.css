@@ -6,7 +6,7 @@ text-shadow : 1px 1px 1px #C1FCD3;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-top: 45px;
 padding-bottom: 45px;
-position: relative;
+
 }
 .gallery h1
 {
@@ -15,7 +15,11 @@ position: relative;
 }
 .images-selector
 {
-    height: 350px;
+    height: 100%;
+
+     /* Make the image responsive */
+    /* margin: 0 auto; */
+    
 }
 .images-selector input
 {
@@ -61,19 +65,24 @@ position: relative;
 }
 .img
 {
-    display: flex;
-    justify-content: center;
+
     left : 1;
+ /* Center the image horizontally */
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
+
 .row1
 {
     padding-left: 10px;
-    display: flex;
+    display:inline-flex;
+    /* display: flex; */
 }
 .row2
 {
     padding-left: 10px;
-    display: flex;
+    display: inline-flex;
 }
 .gallery-main
 {
@@ -89,6 +98,9 @@ position: relative;
 }
 .img-card
 {
+    /* display: inline-block;
+    margin-right: 10px; */
+
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -118,3 +130,26 @@ position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .radio {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    /* For screens narrower than 768px */
+    .img{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .img-card {
+      margin: 10px;
+    }
+  }

@@ -19,8 +19,8 @@ const GalleryPage = () =>
     <div className="gallery">
           <h1>BIT Serene Campus</h1>
     </div>
-    <div className="images-selector">
-    <div className="img">
+    <div className="images-selector" style={{ maxWidth: "100%", margin: "0 auto" }}>
+    <div className="img" style={{ justifyContent: "center" }}>
       <div className="row1">
         <input type="radio" id="im1" name="image" value="bit1"/>
         <label htmlFor="bit1" className="img-card img1"></label>
