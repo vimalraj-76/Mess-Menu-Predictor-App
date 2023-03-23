@@ -12,14 +12,14 @@ const MenuComp=()=>
 {
   const { menuData } = useContext(MyContext);
     const [images, setImages] = useState([
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/5/01.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/1/002.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/33/05.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/1/012.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/31/01.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/1/009.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/1/007.webp',
-        'https://www.bitsathy.ac.in/assets/images/facilities/campus/30/01.webp'
+        'https://www.bitsathy.ac.in/wp-content/gallery/academic-buildings/Academic%20Buildings12.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/academic-buildings/Academic%20Buildings4.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/cafeteria/Cafeteria1.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/green-campus/Green%20Campus3.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/green-campus/Green%20Campus7.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/electric-car/Electric%20Car1.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/internet-centre/Internet%20Centre1.jpg',
+        'https://www.bitsathy.ac.in/wp-content/gallery/community-radio/Community%20Radio2.jpg'
       ]);
       const [currentIndex, setCurrentIndex] = useState(0);
       useEffect(() => {
