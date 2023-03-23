@@ -13,13 +13,16 @@
 import React,{createContext, useState, useContext} from "react";
 import axios from 'axios';
 import './MenuForm.css';
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 const MyContext = createContext(null);
 const MenuForm=()=>{
   const [day, setDay] = useState('');
   const [hostel, setHostel] = useState('');
   const [meal, setMeal] = useState('');
   const { setMenuData } = useContext(MyContext);
+  const navigate=useNavigate();
+  
+  
   const onFormSubmit=(event)=>
   {
     const data={
@@ -31,6 +34,7 @@ const MenuForm=()=>{
       try {
         const response = await axios.post('https://menu-tracker-app-backend-database-laq9.onrender.com/testApi', data);
         setMenuData(response.data);
+        navigate('/getMenu');
       } catch (error) {
         console.error(error);
       }}
@@ -78,12 +82,12 @@ const MenuForm=()=>{
               </select>
             </div>
             <div className="Navlink-head">
-              <NavLink className="Navlink" to="getMenu" onClick={onFormSubmit}><span>Click to see the menu 😋</span></NavLink>
+              <NavLink className="Navlink" onClick={onFormSubmit}><span>Click to see the menu 😋</span></NavLink>
             </div>
           </form>
         </div>
         </div>
     </>)
 }
-export  { MyContext };
+export { MyContext };
 export default MenuForm;
